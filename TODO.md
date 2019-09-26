@@ -8,3 +8,4 @@
 - [ ] Image in dockerhub
 - [ ] Unittests
 - [ ] Lint
+- [ ] Add documentation to readthedocs.io
