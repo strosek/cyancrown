@@ -8,4 +8,5 @@
 - [ ] Image in dockerhub
 - [ ] Unittests
 - [ ] Lint
+- [ ] JUnit report for Jenkins compatibility
 - [ ] Add documentation to readthedocs.io
