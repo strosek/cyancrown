@@ -1,0 +1,25 @@
+# YAML test file example
+
+TEST_ID1:
+  name: Name of the test
+  command: docker ps -a
+  timeout: 10s
+  verify:
+    - name: MATCH_OUTPUT
+      value: "CONTAINER ID.*IMAGE.*PORTS.*NAMES"
+    - name: MATCH_EC
+      value: 0
+
+TEST_ID2:
+  name: Name of test number 2
+  command: ls -la
+  timeout: 10m
+  verify:
+    - name: MATCH_OUTPUT
+      value: "total.*rw.*username"
+    - name: MATCH_EC
+      value: 0
+    - name: MATCH_CMD_OUTPUT
+      value:
+        command: docker volume ls
+        output: "VOLUME NAME.*prefix_.+?_suffix"
